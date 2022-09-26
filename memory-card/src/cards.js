@@ -1,17 +1,17 @@
 import './main.css'
 import {useState, useEffect} from 'react'
-import StopSign from './card photos/stop.jpg'
-import GivewaySign from './card photos/giveway.jpg'
-import RoundAboutSign from './card photos/roundabout.jpg'
-import NoLeftTurnSign from './card photos/noleftturn.jpg'
-import NoUTurnSign from './card photos/nouturn.jpg'
-import OneWaySign from './card photos/oneway.jpg'
-import PedestrianSign from './card photos/pedest.jpg'
-import PrioritySign from './card photos/priority.jpg'
+import StopSign from './card photos/pngwing.com (4).png'
+import GivewaySign from './card photos/giveway.png'
+import RoundAboutSign from './card photos/roundabout.png'
+import RoadWorksSign from './card photos/pngwing.com (3).png'
+import CrossingSign from './card photos/pngwing.com (2).png'
+import GradientSign from './card photos/pngwing.com.png'
+import TrafficLight from './card photos/trafficLight.png'
+import NationalSpeedLimit from './card photos/pngwing.com (1).png'
 
 function Cards() {
 
-const roadSigns = [StopSign,GivewaySign,RoundAboutSign,NoLeftTurnSign,NoUTurnSign,OneWaySign,PedestrianSign,PrioritySign]
+const roadSigns = [StopSign,GivewaySign,RoundAboutSign,RoadWorksSign,CrossingSign,GradientSign,TrafficLight,NationalSpeedLimit]
 
 const [signs, setSigns] = useState(roadSigns)
 
