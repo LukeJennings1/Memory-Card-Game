@@ -8,10 +8,28 @@ import CrossingSign from './card photos/pngwing.com (2).png'
 import GradientSign from './card photos/pngwing.com.png'
 import TrafficLight from './card photos/trafficLight.png'
 import NationalSpeedLimit from './card photos/pngwing.com (1).png'
+import LevelCrossingSign from './card photos/levelCrossing.png'
+import NoCyclingSign from './card photos/nocycling.png'
+import TunnelSign from './card photos/TunnelSign.png'
+import NoUTurnSign from './card photos/noUTurnSign.png'
+
+
 
 function Cards() {
 
-const roadSigns = [StopSign,GivewaySign,RoundAboutSign,RoadWorksSign,CrossingSign,GradientSign,TrafficLight,NationalSpeedLimit]
+const roadSigns = [
+    StopSign, 
+    GivewaySign,
+    RoundAboutSign,
+    RoadWorksSign,
+    CrossingSign,
+    GradientSign,
+    TrafficLight,
+    NationalSpeedLimit,
+    LevelCrossingSign,
+    NoCyclingSign,
+    TunnelSign,
+    NoUTurnSign]
 
 const [signs, setSigns] = useState(roadSigns)
 
@@ -76,6 +94,22 @@ useEffect((e) => {
             scoreLogic(event);
             }}></input>
         <input type='image' src={signs[7]} className='cards' onClick={event => {
+            cardLogic(event);
+            scoreLogic(event);
+            }}></input>
+        <input type='image' src={signs[8]} className='cards' onClick={event => {
+            cardLogic(event);
+            scoreLogic(event);
+            }}></input>
+        <input type='image' src={signs[9]} className='cards' onClick={event => {
+            cardLogic(event);
+            scoreLogic(event);
+            }}></input>
+        <input type='image' src={signs[10]} className='cards' onClick={event => {
+            cardLogic(event);
+            scoreLogic(event);
+            }}></input>
+        <input type='image' src={signs[11]} className='cards' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             }}></input>

@@ -8,8 +8,9 @@ function Header() {
     return (
         <div className="headerMasterWrapper">
             <div className="headerBar"></div>
+                <img src = {learnerImage} className = 'LearnerImages' id = 'learnerImageLeft'></img>
             <div className="headerTextContent">Theory Test Sign Game</div>
-            <img src = {learnerImage} id = 'LearnerImage'></img>
+                <img src = {learnerImage} className = 'LearnerImages' id = 'learnerImageRight'></img>
         </div>
     )
 }
