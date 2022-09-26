@@ -9,7 +9,7 @@ function Header() {
         <div className="headerMasterWrapper">
             <div className="headerBar"></div>
                 <img src = {learnerImage} className = 'LearnerImages' id = 'learnerImageLeft'></img>
-            <div className="headerTextContent">Theory Test Sign Game</div>
+            <div className="headerTextContent">Road Sign Memory Game</div>
                 <img src = {learnerImage} className = 'LearnerImages' id = 'learnerImageRight'></img>
         </div>
     )

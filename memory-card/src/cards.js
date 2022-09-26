@@ -41,11 +41,11 @@ const cardLogic = (e) => {
     // this then it would not work as sort() mutates the original array so react rejects it. 
   setSigns(arraySoftCopy.sort((a,b) => 0.5 - Math.random()));
 }
-// const currentScore = []
 const [score, setScore] = useState([])
 
 
 const scoreLogic = (event) => {
+    console.log(event.target.src)
  if (event.target.src === "http://localhost:3000/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
      return (
         setScore([...score, StopSign]),
@@ -53,20 +53,22 @@ const scoreLogic = (event) => {
         console.log(score.length)
     )
 }
-
-if (event.target.src === "http://localhost:3000/static/media/giveway.ed5efc722debbf86bc8b.png") {
+else if (event.target.src === "http://localhost:3000/static/media/giveway.ed5efc722debbf86bc8b.png") {
     return (
         setScore([...score, GivewaySign]),
    console.log(score),
    console.log(score.length)
    )
- 
+}
+else if (event.target.src === "http://localhost:3000/static/media/roundabout.7bb50a6da6a154399779.png") {
+    return (
+        setScore([...score, RoundAboutSign]),
+        console.log(score),
+        console.log(score.length)
+   )
+}
 }
 
-}
-// useEffect((e) => {
-//     console.log('dom-render')
-//      }, [signs])
     return (
 <div className='cardsDivWrapper'>
     <form className="cardsWrapper">
