@@ -3,13 +3,17 @@ import './App.css';
 import Cards from './cards'
 import ScoreBoard from './score'
 import Header from './header'
+import Footer from './footer'
 
 function App() {
   return (
     <div className="App">
-      <Header />
+    <Header />
 
-      <Cards />
+    <Cards />
+
+    <Footer />
+
     </div>
 
   );
@@ -19,8 +23,5 @@ export default App;
 
 
 // Scoreboard - current and best score 
-// cards - display images - these should be buttons 
-// random order - these images should change randomly on every click
-
-
-// Start with the cards, this should be a grid with 8 divs 
+// cards - display images - these should be buttons  - done
+// random order - these images should change randomly on every click - done

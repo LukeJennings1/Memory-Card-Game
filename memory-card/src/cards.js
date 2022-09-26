@@ -41,27 +41,32 @@ const cardLogic = (e) => {
     // this then it would not work as sort() mutates the original array so react rejects it. 
   setSigns(arraySoftCopy.sort((a,b) => 0.5 - Math.random()));
 }
+// const currentScore = []
+const [score, setScore] = useState([])
 
-const currentScore = []
-console.log(currentScore);
 
 const scoreLogic = (event) => {
-    console.log(event.target.src)
- if (event.target.src === "http://localhost:3000/static/media/stop.fe1b28030ceb4a7cb652.jpg") {
+ if (event.target.src === "http://localhost:3000/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
      return (
-    currentScore.push(StopSign),
-    console.log('yes'),
-    console.log(currentScore),
-    console.log(currentScore.length)
-// this function takes the target image and if it equals a certain picture then it adds it to the array. 
-// we need to expect this to suit all images. 
-     )
-    
+        setScore([...score, StopSign]),
+        console.log(score),
+        console.log(score.length)
+    )
 }
+
+if (event.target.src === "http://localhost:3000/static/media/giveway.ed5efc722debbf86bc8b.png") {
+    return (
+        setScore([...score, GivewaySign]),
+   console.log(score),
+   console.log(score.length)
+   )
+ 
 }
-useEffect((e) => {
-    console.log('dom-render')
-     }, [signs])
+
+}
+// useEffect((e) => {
+//     console.log('dom-render')
+//      }, [signs])
     return (
 <div className='cardsDivWrapper'>
     <form className="cardsWrapper">
@@ -114,6 +119,9 @@ useEffect((e) => {
             scoreLogic(event);
             }}></input>
     </form>
+    <div className='CurrentScoreDisplay'>Score: {score.length}</div>
+    {/* <div>{score}</div> */}
+
 </div>  
     )
 }
