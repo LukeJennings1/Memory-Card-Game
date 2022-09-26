@@ -1,4 +1,4 @@
-import'./main.css'
+import './main.css'
 import {useState, useEffect} from 'react'
 import StopSign from './card photos/stop.jpg'
 import GivewaySign from './card photos/giveway.jpg'
@@ -22,12 +22,24 @@ const cardLogic = (e) => {
     // REMEMBER, the spread operator ^^ makes a softcopy which allows us to use the sort method. If we did not use
     // this then it would not work as sort() mutates the original array so react rejects it. 
   setSigns(arraySoftCopy.sort((a,b) => 0.5 - Math.random()));
-
- 
-  console.log(signs)
 }
+
+const currentScore = []
+console.log(currentScore);
+
 const scoreLogic = (event) => {
-    console.log(event)
+    console.log(event.target.src)
+ if (event.target.src === "http://localhost:3000/static/media/stop.fe1b28030ceb4a7cb652.jpg") {
+     return (
+    currentScore.push(StopSign),
+    console.log('yes'),
+    console.log(currentScore),
+    console.log(currentScore.length)
+// this function takes the target image and if it equals a certain picture then it adds it to the array. 
+// we need to expect this to suit all images. 
+     )
+    
+}
 }
 useEffect((e) => {
     console.log('dom-render')
@@ -35,9 +47,9 @@ useEffect((e) => {
     return (
 <div className='cardsDivWrapper'>
     <form className="cardsWrapper">
-        <input type='image' src={signs[0]} className='cards' onClick={event => {
-            cardLogic(event);
+        <input type='image' src={signs[0]} className='cards' id = 'stopSign' onClick={event => {
             scoreLogic(event);
+            cardLogic(event);
             }}></input>
         <input type='image' src={signs[1]} className='cards' onClick={event => {
             cardLogic(event);

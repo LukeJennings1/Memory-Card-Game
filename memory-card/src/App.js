@@ -2,10 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Cards from './cards'
 import ScoreBoard from './score'
+import Header from './header'
 
 function App() {
   return (
     <div className="App">
+      <Header />
+
       <Cards />
     </div>
 
