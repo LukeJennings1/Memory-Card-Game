@@ -47,7 +47,6 @@ const cardLogic = (e) => {
 
 const [score, setScore] = useState([])
 
-
 function stopSign(event) {
 if (score.includes(StopSign) === true && event.target.src === "http://localhost:3000/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
     return (
@@ -98,6 +97,16 @@ else if (score.includes(NoUTurnSign) === true && event.target.src === "http://lo
         setScore([])
     )}
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const [HighScore, setHighScore] = useState(score.length);
+
+useEffect(()=> {
+    if (score.length > 0 && HighScore < score.length ) {
+        return setHighScore(score.length)
+    }
+},[score])
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -219,14 +228,12 @@ else if (event.target.src === "http://localhost:3000/static/media/noUTurnSign.fb
             }}></input>
     </form>
     <div className='CurrentScoreDisplay'>Score: {score.length}</div>
-
+    <div className='HighScoreDisplay'>{HighScore}</div>
 </div>  
     )
 }
-// when we click an image it needs to be added to a new array. 
-// need to add another function that is called on every click just like the cardLogic and scoreLogic functions. 
-// this function will be a checker function that checks the score array. If a double is added then it will reset 
-// the array completely. 
+// need to implement a highest score. the useEffect hook can be run every time the score array is updated. 
+// this useEffect hook can update a variable that holds the best score. 
 
 
 
