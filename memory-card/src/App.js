@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Cards from './cards'
-import ScoreBoard from './score'
 import Header from './header'
 import Footer from './footer'
 

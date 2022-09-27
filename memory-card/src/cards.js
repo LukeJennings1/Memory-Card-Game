@@ -109,7 +109,7 @@ useEffect(()=> {
     }
     
     
-},[score])
+},[score,HighScore ])
 
 // This useEffect hook updates when the score array changes. The conditional if statement ensures that
 // the score does not go lower than the highest recorded score. 
@@ -171,62 +171,62 @@ else if (event.target.src === "http://localhost:3000/static/media/noUTurnSign.fb
     return (
 <div className='cardsDivWrapper'>
     <form className="cardsWrapper">
-        <input type='image' src={signs[0]} className='cards' id = 'stopSign' onClick={event => {
+        <input type='image' src={signs[0]} className='cards' id = 'stopSign' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[1]} className='cards' onClick={event => {
+        <input type='image' src={signs[1]} className='cards'  alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[2]} className='cards' onClick={event => {
+        <input type='image' src={signs[2]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[3]} className='cards' onClick={event => {
+        <input type='image' src={signs[3]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[4]} className='cards' onClick={event => {
+        <input type='image' src={signs[4]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[5]} className='cards' onClick={event => {
+        <input type='image' src={signs[5]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[6]} className='cards' onClick={event => {
+        <input type='image' src={signs[6]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[7]} className='cards' onClick={event => {
+        <input type='image' src={signs[7]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[8]} className='cards' onClick={event => {
+        <input type='image' src={signs[8]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[9]} className='cards' onClick={event => {
+        <input type='image' src={signs[9]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[10]} className='cards' onClick={event => {
+        <input type='image' src={signs[10]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
             }}></input>
-        <input type='image' src={signs[11]} className='cards' onClick={event => {
+        <input type='image' src={signs[11]} className='cards' alt='sign' onClick={event => {
             cardLogic(event);
             scoreLogic(event);
             stopSign(event);
