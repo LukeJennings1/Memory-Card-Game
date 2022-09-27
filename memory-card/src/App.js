@@ -1,4 +1,3 @@
-import './App.css';
 import Cards from './cards'
 import Header from './header'
 import Footer from './footer'

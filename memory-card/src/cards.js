@@ -31,7 +31,6 @@ const roadSigns = [
     TunnelSign,
     NoUTurnSign]
 
-const [signs, setSigns] = useState(roadSigns)
 
 
 const cardLogic = (e) => {
@@ -41,11 +40,20 @@ const cardLogic = (e) => {
     // this then it would not work as sort() mutates the original array so react rejects it. 
   setSigns(arraySoftCopy.sort((a,b) => 0.5 - Math.random()));
 }
-
-
-
+const [signs, setSigns] = useState(roadSigns)
 
 const [score, setScore] = useState([])
+
+const [HighScore, setHighScore] = useState(score.length);
+
+useEffect(()=> {
+    if (score.length > 0 && HighScore < score.length ) {
+        return setHighScore(score.length)}
+    if (HighScore === 12) {
+        return setHighScore(0);
+    }
+    
+},[score])
 
 function stopSign(event) {
 if (score.includes(StopSign) === true && event.target.src === "http://localhost:3000/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
@@ -97,23 +105,11 @@ else if (score.includes(NoUTurnSign) === true && event.target.src === "http://lo
         setScore([])
     )}
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const [HighScore, setHighScore] = useState(score.length);
 
-useEffect(()=> {
-    if (score.length > 0 && HighScore < score.length ) {
-        return setHighScore(score.length)}
-    if (HighScore === 12) {
-        return setHighScore(0);
-    }
-    
-    
-},[score,HighScore ])
 
 // This useEffect hook updates when the score array changes. The conditional if statement ensures that
 // the score does not go lower than the highest recorded score. 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const scoreLogic = (event) => {
  if (event.target.src === "http://localhost:3000/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
