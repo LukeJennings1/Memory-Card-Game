@@ -103,11 +103,16 @@ const [HighScore, setHighScore] = useState(score.length);
 
 useEffect(()=> {
     if (score.length > 0 && HighScore < score.length ) {
-        return setHighScore(score.length)
+        return setHighScore(score.length)}
+    if (HighScore === 12) {
+        return setHighScore(0);
     }
+    
+    
 },[score])
 
-
+// This useEffect hook updates when the score array changes. The conditional if statement ensures that
+// the score does not go lower than the highest recorded score. 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const scoreLogic = (event) => {
@@ -122,7 +127,7 @@ else if (event.target.src === "http://localhost:3000/static/media/giveway.ed5efc
 else if (event.target.src === "http://localhost:3000/static/media/roundabout.7bb50a6da6a154399779.png") {
     return (
         setScore([...score, RoundAboutSign]))
-}  //
+}
 else if (event.target.src === "http://localhost:3000/static/media/pngwing.com%20(3).22114961d3eebc0acd57.png") {
     return (
         setScore([...score, RoadWorksSign]))
@@ -228,13 +233,10 @@ else if (event.target.src === "http://localhost:3000/static/media/noUTurnSign.fb
             }}></input>
     </form>
     <div className='CurrentScoreDisplay'>Score: {score.length}</div>
-    <div className='HighScoreDisplay'>{HighScore}</div>
+    <div className='HighScoreDisplay'>Highest Score: {HighScore}</div>
 </div>  
     )
 }
-// need to implement a highest score. the useEffect hook can be run every time the score array is updated. 
-// this useEffect hook can update a variable that holds the best score. 
-
 
 
 export default Cards; 

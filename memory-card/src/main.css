@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    --marginForHeader: 350px;
+    --marginForHeader: 325px;
 } 
 body {
     background: rgb(255,255,255);
@@ -48,6 +48,7 @@ body {
 }
 .headerTextContent {
     width: 600px;
+    margin-left: 46px;
 }
 .LearnerImages  {
     width: 40px;
@@ -76,4 +77,9 @@ margin-left:  var(--marginForHeader);
     margin-top: 500px;
     font-family: 'Bungee Spice', cursive;
 
+}
+.HighScoreDisplay {
+    position: absolute;
+    margin-top: 560px;
+    font-family: 'Bungee Spice', cursive;
 }
