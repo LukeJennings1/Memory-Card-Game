@@ -8,7 +8,7 @@ function Footer() {
         <div className="lowerThirdFooter">
             <div className="nameField">Made by Luke Jennings 2022 </div>
             <a href='https://github.com/LukeJennings1'>
-            <img src = {GitHubLogo} className="githubLogo"></img>
+            <img src = {GitHubLogo} alt = 'githublogo' className="githubLogo"></img>
             </a>
         </div>
     )
