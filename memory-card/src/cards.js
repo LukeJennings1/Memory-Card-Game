@@ -56,31 +56,31 @@ useEffect(()=> {
 },[score])
 
 function stopSign(event) {
-if (score.includes(StopSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
+if (score.includes(StopSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
     return (
         setScore([])
     )}
-else if (score.includes(GivewaySign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/giveway.ed5efc722debbf86bc8b.png") {
+else if (score.includes(GivewaySign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/giveway.ed5efc722debbf86bc8b.png") {
     return (
         setScore([])
     )}
-else if (score.includes(RoundAboutSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/roundabout.7bb50a6da6a154399779.png") {
+else if (score.includes(RoundAboutSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/roundabout.7bb50a6da6a154399779.png") {
     return (
         setScore([])
     )} 
-else if (score.includes(RoadWorksSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(3).22114961d3eebc0acd57.png") {
+else if (score.includes(RoadWorksSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(3).22114961d3eebc0acd57.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(CrossingSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(2).4e3987bb6ef274cc79fd.png") {
+else if (score.includes(CrossingSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(2).4e3987bb6ef274cc79fd.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(GradientSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com.d41ab15dcc19b5860ec1.png") {
+else if (score.includes(GradientSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com.d41ab15dcc19b5860ec1.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(TrafficLight) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/trafficLight.7ff4a20421f24a578606.png") {
+else if (score.includes(TrafficLight) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/trafficLight.7ff4a20421f24a578606.png") {
     return (    
         setScore([])
     )}
@@ -88,19 +88,19 @@ else if (score.includes(NationalSpeedLimit) === true && event.target.src === "ht
     return (    
         setScore([])
     )}
-else if (score.includes(TonkSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/tonk.b4b2bc5e51a9715ef48a.png") {
+else if (score.includes(TonkSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/tonk.b4b2bc5e51a9715ef48a.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(NoCyclingSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/nocycling.29a16a7cfa4369946783.png") {
+else if (score.includes(NoCyclingSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/nocycling.29a16a7cfa4369946783.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(TunnelSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/TunnelSign.25c28b0d324a73a237cb.png") {
+else if (score.includes(TunnelSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/TunnelSign.25c28b0d324a73a237cb.png") {
     return (    
         setScore([])
     )}
-else if (score.includes(NoUTurnSign) === true && event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/noUTurnSign.fb906dc9b1b59a5c43fa.png") {
+else if (score.includes(NoUTurnSign) === true && event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/noUTurnSign.fb906dc9b1b59a5c43fa.png") {
     return (    
         setScore([])
     )}
@@ -113,51 +113,51 @@ else if (score.includes(NoUTurnSign) === true && event.target.src === "http://lo
 
 const scoreLogic = (event) => {
     console.log(event.target.src)
- if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
+ if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(4).558ce526aeee659c8ff7.png") {
      return (
         setScore([...score, StopSign])) 
 }
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/giveway.ed5efc722debbf86bc8b.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/giveway.ed5efc722debbf86bc8b.png") {
     return (
         setScore([...score, GivewaySign]))
 }
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/roundabout.7bb50a6da6a154399779.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/roundabout.7bb50a6da6a154399779.png") {
     return (
         setScore([...score, RoundAboutSign]))
 }
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(3).22114961d3eebc0acd57.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(3).22114961d3eebc0acd57.png") {
     return (
         setScore([...score, RoadWorksSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(2).4e3987bb6ef274cc79fd.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(2).4e3987bb6ef274cc79fd.png") {
     return (
         setScore([...score, CrossingSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com.d41ab15dcc19b5860ec1.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com.d41ab15dcc19b5860ec1.png") {
     return (
         setScore([...score, GradientSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/trafficLight.7ff4a20421f24a578606.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/trafficLight.7ff4a20421f24a578606.png") {
     return (
         setScore([...score, TrafficLight]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/pngwing.com%20(1).3e71a86c9196d9fe0336.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/pngwing.com%20(1).3e71a86c9196d9fe0336.png") {
     return (
         setScore([...score, NationalSpeedLimit]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/tonk.b4b2bc5e51a9715ef48a.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/tonk.b4b2bc5e51a9715ef48a.png") {
     return (
         setScore([...score, TonkSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/nocycling.29a16a7cfa4369946783.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/nocycling.29a16a7cfa4369946783.png") {
     return (
         setScore([...score, NoCyclingSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/TunnelSign.25c28b0d324a73a237cb.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/TunnelSign.25c28b0d324a73a237cb.png") {
     return (
         setScore([...score, TunnelSign]))
 } 
-else if (event.target.src === "http://localhost:3000/Memory-Card-Game/static/media/noUTurnSign.fb906dc9b1b59a5c43fa.png") {
+else if (event.target.src === "https://lukejennings1.github.io/Memory-Card-Game/static/media/noUTurnSign.fb906dc9b1b59a5c43fa.png") {
     return (
         setScore([...score, NoUTurnSign]))
 } 
