@@ -8,8 +8,10 @@
 body {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(14,36,73,1) 79%);
-    background-repeat: no-repeat;
+    /* background-repeat:repeat; */
     background-size: 100%;
+    height: 100vh;
+    
 }
 .App {
     display: flex;
